@@ -11,5 +11,5 @@ const filme = document.querySelector("#filme").value;
 const filmeserie = document.querySelector("#filmeserie").value;
 const canaisapp = document.querySelector("#canaisapp").value;
 
-resultado.textContent = `Obrigado, ${nome}! Voce ve sempre ${filmeserie}, voce prefere filmes/series de ${genero}. Seu canal/aplicativo favorito é ${canaisapp} e seu filme favorito é ${filme}, idioma será ${audio}`;formulario.reset ();
+resultado.textContent = `Obrigado, ${nome}! Voce ve sempre ${filmeserie}, voce prefere filmes/series de ${genero}. Seu canal/aplicativo favorito é ${canaisapp} e seu filme favorito é ${filme}, idioma será ${audio}.`;formulario.reset ();
 });
