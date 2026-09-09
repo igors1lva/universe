@@ -9,7 +9,7 @@ main {
 max-width: 450px;
 margin: auto;
 padding: 25px;
-background: white
+background: white;
 border-radius: 9px;
 }
 
@@ -26,9 +26,9 @@ input,
 select,
 button {
  width: 100%;
- padding: 10px
+ padding: 10px;
  margin-top: 5px;
- box-sizzing: border-box;
+ box-sizing: border-box;
 }
 
 button {
@@ -40,8 +40,45 @@ cursor: pointer;
 }
 
 #resultado {
- color: green
+ color: green;
 font-weight: bold;
 }
 
+/* Estilos do Modal */
+dialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
 
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  padding: 30px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-content button:hover {
+  background: #4a0e6a;
+}
