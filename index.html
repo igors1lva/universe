@@ -18,8 +18,8 @@
       <label for="nome">Qual seu nome ou apelido?</label>
       <input id="nome" type="text" required>
 
-<label for="filmeserie">Qual sua preferência Filmes ou Séries?</label>
-<select id="filmeserie" required>
+      <label for="filmeserie">Qual sua preferência Filmes ou Séries?</label>
+      <select id="filmeserie" required>
         <option value="">Selecione</option>
         <option>Filmes</option>
         <option>Séries</option>
@@ -37,14 +37,14 @@
 
       <label for="canaisapp">Quais são seus canais ou aplicativos favoritos?</label>
       <select id="canaisapp" required>
-              <option value="">Selecione</option>
-              <option>Netflix</option>
-              <option>Amazon prime</option>
-              <option>HBO</option>
-              <option>Apple</option>
-              <option>Paramont</option>
-              <option>Globoplay</option>
-            </select>
+        <option value="">Selecione</option>
+        <option>Netflix</option>
+        <option>Amazon prime</option>
+        <option>HBO</option>
+        <option>Apple</option>
+        <option>Paramont</option>
+        <option>Globoplay</option>
+      </select>
 
       <label for="filme">Qual é seu filme ou série favorita?</label>
       <input id="filme" type="text" required>
@@ -59,9 +59,15 @@
 
       <button type="submit">Enviar</button>
     </form>
-
-    <p id="resultado"></p>
   </main>
+
+  <dialog id="modalResultado">
+    <div class="modal-content">
+      <p id="resultado"></p>
+      <button id="fecharModal">Fechar</button>
+    </div>
+  </dialog>
+
   <script src="script.js"></script>
 </body>
 
