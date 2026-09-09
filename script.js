@@ -1,5 +1,7 @@
 const formulario = document.querySelector("#formulario");
 const resultado = document.querySelector("#resultado");
+const modal = document.querySelector("#modalResultado");
+const fecharModal = document.querySelector("#fecharModal");
 
 formulario.addEventListener("submit", function (evento) {
 evento.preventDefault();
@@ -11,5 +13,13 @@ const filme = document.querySelector("#filme").value;
 const filmeserie = document.querySelector("#filmeserie").value;
 const canaisapp = document.querySelector("#canaisapp").value;
 
-resultado.textContent = `Obrigado, ${nome}! Voce ve sempre ${filmeserie}, voce prefere filmes/series de ${genero}. Seu canal/aplicativo favorito é ${canaisapp} e seu filme favorito é ${filme}, idioma será ${audio}.`;formulario.reset ();
+resultado.textContent = `Obrigado, ${nome}! Você vê sempre ${filmeserie}, você prefere filmes/séries de ${genero}. Seu canal/aplicativo favorito é ${canaisapp}, seu filme favorito é ${filme} e prefere ${audio}!`;
+
+// Abre a janela modal
+modal.showModal();
+});
+
+// Fecha a modal quando clicar no botão
+fecharModal.addEventListener("click", function () {
+  modal.close();
 });
